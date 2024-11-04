@@ -1,0 +1,36 @@
+header{
+    text-align: center;
+    background-color: rgb(178, 116, 236);
+    padding: 10px;
+    
+}
+nav{
+    margin: 0 auto;
+    width: 60%;
+}
+nav ul li{
+    display: inline;
+    margin-right:20px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'Gill Sans MT', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+p{
+    color: rgb(34, 34, 48);
+    font-family: 'Gill Sans MT', sans-serif;
+    
+}
+h2{
+    font-family: Arial, sans-serif;
+}
+#bloco{
+    margin: 0 700px 0 700px;  
+}
+
+img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

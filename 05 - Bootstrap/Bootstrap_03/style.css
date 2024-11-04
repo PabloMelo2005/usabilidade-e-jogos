@@ -1,0 +1,36 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+.header {
+    background-color: #FF4500;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+}
+.movie-grid {
+    padding: 20px;
+}
+.movie-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.footer {
+    background-color: #FF4500;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+a{
+    transition: transform 0.5s ease;
+}
+
+a:hover{
+    transform: scale(1.05);
+}
+
+
+

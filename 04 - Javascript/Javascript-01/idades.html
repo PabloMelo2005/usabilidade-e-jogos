@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class CalculoIdade {
+        constructor(anoAtual, anoNascimento) {
+          this.atual = anoAtual;
+          this.nascimento = anoNascimento;
+        }
+        calculo() {
+          return this.atual - this.nascimento;
+        }
+      }
+      var calculoIdade = new CalculoIdade(2024, 1950); // definição do ano atual e o ano de nascimento
+      var idade = calculoIdade.calculo();
+
+      console.log("Sua idade é: " + idade); //imprime o resultado no terminal
+      document.write("Sua idade é: " + idade); //imprime o resultado na pag
+    </script>
+  </body>
+</html>

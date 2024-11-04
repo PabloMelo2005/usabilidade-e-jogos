@@ -1,0 +1,32 @@
+.header {
+    background-color: #FF4500;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+body {
+    background-color: #161616;
+    color: #fff;
+}
+
+img{
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+p{
+    background-color: #0f0f0f;
+    border-radius: 15px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin: 15px;
+    font-family: "Afacad Flux", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}

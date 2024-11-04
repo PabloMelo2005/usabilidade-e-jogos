@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <form action="/practice.html" method="POST">
+      <h1>FORMULÁRIO</h1>
+      <p>descrição descrição descrição descrição descrição</p>
+      <label for="nome">Seu nome aqui</label><!--informações da caixa de texto-->
+      <input type="text" name="username" id="nome" maxlength="250" minlength="5"><!--caixa de texto--><!--maxlength e minlength define quantos caracteres max e min-->
+      <br>
+      <label for="password">Insira sua senha aqui</label>
+      <input type="password" id="password" name="user-password" required pattern="[0-9] {14,16}"><!--caixa de texto para senha-->
+      <!--required: para informações que devem ser fornecidas antes do envio-->
+      <!--pattern: define regras de como o texto deve ser inserido como numero de caracteres, quais numeros. no caso numeros de0 a 9 [0-9] e 14 a 16 digitos permitidos{14-16}-->
+      <br><hr>
+      <label for="years">Qual sua idade?</label>
+      <input id="years" name="years" type="number" step="1" min="1" max="100"><!--caixa de texto para contagem de anos-->
+      </form>
+      <form>
+        <label for="volume">Controle  de volume</label>
+        <input id="volume" name="volume" type="range" min="0" max="100" step="1">
+        <br><hr>
+        <section class="recheios">
+          <span>Escolha o recheio do sanduiche:</span><br>
+          <label for="sanduiche">Queijo</label>
+          <input id="sanduiche" name="recheio" type="checkbox" value="Queijo"><br><!--checkbox é uma caixa de seleção como uma lista de coisas a fazer-->
+          <label for="tomate">Tomate</label>
+          <input id="tomate" name="recheio" type="checkbox" value="Tomate">
+        </section>
+      </form>
+      <hr>
+      <img src="https://i.pinimg.com/564x/6b/a2/82/6ba282721457387cc3854d426ad466a7.jpg" alt="Davie's Burgers Logo" id="logo" height="150">
+      <hr>
+      <!--Lista Suspensa-->
+      <form>
+        <label for="Supermercado">Produtos</label>
+        <select id="Itens" name="compras">
+          <option value="maçã">Maçã</option>
+          <option value="banana">Banana</option>
+          <option value="melancia">Melancia</option>
+          <option value="caju">Caju</option>
+          <option value="mamão">Mamão</option>
+          <option value="uva">Uva</option>
+        </select>
+      </form>
+      <hr>
+      <!--Entrada da lista de dados-->
+      <form>
+        <section>
+          <label for="cidades">Cidades ja visitadas</label>
+          <input type="text" list="cidade" id="cidades" name="cidades"><!--tipo text para acrescentar uma caixa de texto -->
+          <!--datalist é o filtro de opções que podem ser encontradas-->
+          <datalist id="cidade"><!--id se transforma em # para customizar em css-->
+            <option value="Belo Horizonte"></option>
+            <option value="Venda Nova"></option>
+            <option value="Sabará"></option>
+            <option value="Uberlândia"></option>
+          </datalist>
+      </form>
+      <!--textarea enquanto elemento: aquela parte que todo mundo tem preguiça de adicionar as opções nao encontradas-->
+      <form>
+        <label for="+Cidades">Adione outras cidades não listadas:</label>
+        <br>
+        <!-- a caixa de texto em questão-->
+        <textarea id="+Cidades" name="+city" rows="5" cols="30">Digite aqui</textarea> 
+      </form>
+      <!--Envio do formulario-->
+      <form>
+        <input type="submit" value="Enviar">
+      </form>
+      <aside><!--é usado para marcar informações adicionais que podem aprimorar outro elemento, 
+        mas não são necessárias para entender o conteúdo principal.-->
+        <p>Bibliografias
+        Notas de rodapé
+        Comentários</p>
+      </aside>
+    </section>
+    <figure><!--para encapsular mídia, como uma imagem, ilustração, diagrama, trecho de código, etc.-->
+      <img src="https://i.pinimg.com/564x/31/c2/f7/31c2f71c7b9646d5093a5fdc5323bfce.jpg" height="200">
+      <figcaption>fadfsfffdfafffdf</figcaption><!--figcaption:legenda da imagem-->
+    </figure>
+    <audio controls>
+      <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
+    </audio>
+    <video src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" controls height="200">Video not supported</video>
+  <embed src="https://i.pinimg.com/originals/a8/10/b0/a810b0238c8ba1dde1e2259653ee7446.gif" height="300"/>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+class Cliente {
+  String nome;
+  String email;
+  String telefone;
+
+  Cliente(this.nome, this.email, this.telefone);
+
+  void exibirDados() {
+    print('Nome: $nome');
+    print('Email: $email');
+    print('Telefone: $telefone');
+  }
+}
+
+class Produto {
+  String nome;
+  double preco;
+  int estoque;
+
+  Produto(this.nome, this.preco, this.estoque);
+
+  void exibirDados() {
+    print('Nome do Produto: $nome');
+    print('Preço: R\$${preco.toStringAsFixed(2)}');
+    print('Estoque: $estoque unidades');
+  }
+}
+
+void main() {
+  Cliente cliente1 = Cliente('João Silva', 'joao@email.com', '1234-5678');
+  cliente1.exibirDados();
+
+  print('');
+
+  Produto produto1 = Produto('Caneta', 2.50, 100);
+  produto1.exibirDados();
+}

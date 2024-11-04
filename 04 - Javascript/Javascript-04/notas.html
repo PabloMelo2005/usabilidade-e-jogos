@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Media {
+        constructor(nota01, nota02, nota03) {
+          this.nota01 = nota01;
+          this.nota02 = nota02;
+          this.nota03 = nota03;
+        }
+        calculo() {
+          return (this.nota01 + this.nota02 + this.nota03) / 3;
+        }
+      }
+      var media = new Media(40, 20, 30);
+      var mediaFinal = media.calculo();
+
+      console.log("A média é: " + mediaFinal);
+      document.write("A média é: " + mediaFinal);
+    </script>
+  </body>
+</html>

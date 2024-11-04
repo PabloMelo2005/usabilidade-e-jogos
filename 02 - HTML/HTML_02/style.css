@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    margin-top: 0;
+    width: 100%;
+    height: 8rem;
+    background-color: rgb(155, 8, 8);
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+    height: 100vh;
+
+}
+
+
+
+.ADS {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 900px;
+    height: 550px;
+    color: rgb(255, 255, 255);
+    margin-top: 5rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+    margin-bottom: 5rem;
+
+
+}
+
+.ADS h1 {
+    font-size: 30px;
+    /* Aumento da fonte */
+    line-height: 1.2;
+}
+
+.ADS h2 {
+    margin-top: 2rem;
+    font-size: 25px;
+    text-align: left;
+
+}
+
+.ADS a {
+    padding-top: 15rem;
+    font-size: 23px;
+    color: #fff;
+}
+
+.PSC {
+    margin: auto;
+    padding: 10px;
+    padding-top: 2rem;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    margin-top: 8rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+
+}
+
+.PSC h1 {
+    font-size: 27px;
+    /* Aumento da fonte */
+    line-height: 1.5;
+}
+
+.PSC p {
+    margin-top: 1rem;
+    font-size: 20px;
+    /* Aumento da fonte */
+
+}
+
+.MDS {
+    margin: auto;
+    padding: 10px;
+    padding-top: 2rem;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    margin-top: 8rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+
+}
+
+.MDS h1 {
+    font-size: 27px;
+    /* Aumento da fonte */
+    line-height: 1.5;
+}
+
+
+.MDS p {
+    margin-top: 1rem;
+    font-size: 20px;
+    /* Aumento da fonte */
+
+}
+
+.SDM {
+    margin: auto;
+    padding: 10px;
+    padding-top: 2rem;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    margin-top: 8rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+
+}
+
+.SDM h1 {
+    font-size: 27px;
+    /* Aumento da fonte */
+    line-height: 1.5;
+}
+
+.SDM p {
+    margin-top: 1rem;
+    font-size: 20px;
+    /* Aumento da fonte */
+
+}
+
+.ACC {
+    margin: auto;
+    padding: 10px;
+    padding-top: 2rem;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    margin-top: 8rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+
+}
+
+.ACC h1 {
+    font-size: 27px;
+    /* Aumento da fonte */
+    line-height: 1.5;
+}
+
+
+.ACC p {
+    margin-top: 1rem;
+    font-size: 20px;
+    /* Aumento da fonte */
+}
+
+.SCS {
+    margin: auto;
+    padding: 10px;
+    padding-top: 2rem;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    margin-top: 8rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+
+}
+
+.SCS h1 {
+    font-size: 27px;
+    /* Aumento da fonte */
+    line-height: 1.5;
+}
+
+.SCS P {
+    margin-top: 1rem;
+    font-size: 20px;
+    /* Aumento da fonte */
+
+}
+
+.DP {
+    margin: auto;
+    padding: 10px;
+    padding-top: 2rem;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    margin-top: 8rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+
+}
+
+.DP h1 {
+    font-size: 27px;
+    /* Aumento da fonte */
+    line-height: 1.5;
+}
+
+.DP p {
+    margin-top: 1rem;
+    font-size: 20px;
+    /* Aumento da fonte */
+
+}
+
+.UDWMJ {
+    margin: auto;
+    padding: 10px;
+    padding-top: 2rem;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    margin-top: 8rem;
+    /** Espaçamento entre o cabeçalho e o conteúdo do site  */
+    border: 2px solid rgb(155, 8, 8);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    text-shadow: 0px 0px 5px #222020;
+
+}
+
+.UDWMJ h1 {
+    font-size: 27px;
+    /* Aumento da fonte */
+    line-height: 1.5;
+}
+
+.UDWMJ p {
+    margin-top: 1rem;
+    font-size: 20px;
+    /* Aumento da fonte */
+
+}
+
+.container {
+    margin-inline: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    /** Permite que os itens flexíveis se adaptem ao tamanho do container, quebrando para a próxima linha quando necessário.*/
+    justify-content: center;
+    gap: 10px;
+    /** Espaço de no mínimo 10px entre os ítens, de todas as direções. */
+    margin-bottom: 5rem;
+
+}
+
+footer {
+    background: linear-gradient(180deg, #4d0101, url(img/luca-bravo-XJXWbfSo2f0-unsplash.jpg));
+    /* Gradiente vertical do preto para azul escuro */
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+button {
+    /**Centralização do botão no canto superior esquerdo */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+}

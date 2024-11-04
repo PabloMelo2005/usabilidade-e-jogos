@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Salario {
+        constructor(salario, aumento) {
+          this.salarioInicial = salario;
+          this.aumento = aumento = 0.25;
+        }
+        calculo() {
+          return this.salarioInicial + this.salarioInicial * this.aumento;
+        }
+      }
+      var salario = new Salario(2000);
+      var valorAumento = salario.calculo();
+
+      console.log("Seu salário com aumento é: " + valorAumento);
+      document.write("Seu salário com aumento é: " + valorAumento);
+    </script>
+  </body>
+</html>

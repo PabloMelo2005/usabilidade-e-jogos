@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Esfera {
+        constructor(raio, area, comprimento, volume) {
+          this.area = area;
+          this.raio = raio;
+          this.comprimento = comprimento;
+          this.volume = volume;
+        }
+        calculoArea() {
+          return 4 * Math.PI * Math.pow(this.raio, 2);
+        }
+        calculoComprimento() {
+          return 2 * Math.PI * this.raio;
+        }
+        calculoVolume() {
+          return (4 / 3) * Math.PI * Math.pow(this.raio, 3);
+        }
+      }
+
+      var esfera = new Esfera(6);
+
+      var area = esfera.calculoArea();
+      var volume = esfera.calculoVolume();
+      var comprimento = esfera.calculoComprimento();
+
+      console.log("A área é: " + area + "<br>");
+      console.log("O valor do comprimento é: " + comprimento + "<br>");
+      console.log("O valor do volume é: " + volume + "<br>");
+
+      document.write("A área é: " + area + "<br>");
+      document.write("O valor do comprimento é: " + comprimento + "<br>");
+      document.write("O valor do volume é: " + volume + "<br>");
+    </script>
+  </body>
+</html>

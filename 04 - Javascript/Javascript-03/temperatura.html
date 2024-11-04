@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class temperatura {
+        constructor(celsius, fahrenheit) {
+          this.celsius = celsius;
+        }
+        calculo() {
+          return (this.fahrenheit = this.celsius * 1.8 + 32);
+        }
+      }
+      var temp = new temperatura(30);
+      var convert = temp.calculo();
+
+      console.log("O valor em F é: " + convert);
+      document.write("O valor em F é: " + convert);
+    </script>
+  </body>
+</html>

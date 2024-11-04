@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Triangulo {
+        constructor(lado01, lado02, lado03) {
+          this.cat01 = lado01;
+          this.cat02 = lado02;
+        }
+        calculo() {
+          return Math.sqrt(Math.pow(this.cat01, 2) + Math.pow(this.cat02, 2));
+        }
+      }
+      var triangulo = new Triangulo(8, 5);
+      var hip = triangulo.calculo();
+
+      console.log("O valor da Hipotenusa é: " + hip);
+      document.write("O valor da Hipotenusa é: " + hip);
+    </script>
+  </body>
+</html>

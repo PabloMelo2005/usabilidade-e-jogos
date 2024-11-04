@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .table-custom thead {
+      background-color: #003366;
+      color: white;
+    }
+
+    .table-custom tbody tr:nth-child(even) {
+      background-color: #e0e7f3;
+    }
+
+    .table-custom tfoot tr {
+      background-color: #ff5722;
+      color: white;
+    }
+
+    td {
+      cursor: pointer;
+    }
+
+    td:hover {
+      background-color: #f0f0f0;
+    }
+    tr:hover { 
+      background-color: #ffffff !important; 
+      color: #FF4500; 
+      font-weight: bold;
+      font-size: 1.5rem; 
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>Bootstrap</h1>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Tabela de Notas Interativa</h2>
+    <table class="table table-bordered table-custom text-center">
+      <thead>
+        <tr>
+          <th>Nome do Aluno</th>
+          <th>Nota P1</th>
+          <th>Nota P2</th>
+          <th>Nota T1</th>
+          <th>Nota Total</th>
+          <th>Faltas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td onclick="mostrarMensagem('Aluno: Ana')">Ana</td>
+          <td onclick="mostrarMensagem('Nota P1 de Ana: 29')">29</td>
+          <td onclick="mostrarMensagem('Nota P2 de Ana: 17')">17</td>
+          <td onclick="mostrarMensagem('Nota T1 de Ana: 27')">27</td>
+          <td onclick="mostrarMensagem('Nota Total de Ana: 73')">73</td>
+          <td onclick="mostrarMensagem('Faltas de Ana: 0')">0</td>
+        </tr>
+        <tr>
+          <td onclick="mostrarMensagem('Aluno: Gisele')">Gisele</td>
+          <td onclick="mostrarMensagem('Nota P1: 29')">28</td>
+          <td onclick="mostrarMensagem('Nota P2: 18')">18</td>
+          <td onclick="mostrarMensagem('Nota T1: 24')">24</td>
+          <td onclick="mostrarMensagem('Nota Total de:Gisele: 70')">70</td>
+          <td onclick="mostrarMensagem('Faltas de Gisele: 3')">3</td>
+        </tr>
+        <tr>
+          <td onclick="mostrarMensagem('Aluno: Jane')">Jane</td>
+          <td onclick="mostrarMensagem('Nota P1: 26')">26</td>
+          <td onclick="mostrarMensagem('Nota P2: 20')">20</td>
+          <td onclick="mostrarMensagem('Nota T1: 24')">24</td>
+          <td onclick="mostrarMensagem('Nota Total de Jane: 70')">70</td>
+          <td onclick="mostrarMensagem('Faltas de Jane: 0')">0</td>
+        </tr>
+        <tr>
+          <td onclick="mostrarMensagem('Aluno: Jorge')">Jorge</td>
+          <td onclick="mostrarMensagem('Nota P1 de Jorge: 25')">25</td>
+          <td onclick="mostrarMensagem('Nota P2 de Jorge: 19')">19</td>
+          <td onclick="mostrarMensagem('Nota T1 de Jorge: 29')">29</td>
+          <td onclick="mostrarMensagem('Nota Total de Jorge: 73')">73</td>
+          <td onclick="mostrarMensagem('Faltas de Jorge: 0')">0</td>
+        </tr>
+        <tr>
+          <td onclick="mostrarMensagem('Aluno:Marina')">Marina</td>
+          <td onclick="mostrarMensagem('Nota P1 de Marina: 30')">30</td>
+          <td onclick="mostrarMensagem('Nota P2 de Marina: 16')">16</td>
+          <td onclick="mostrarMensagem('Nota T1 de Marina: 27')">27</td>
+          <td onclick="mostrarMensagem('Nota Total de Marina: 73')">73</td>
+          <td onclick="mostrarMensagem('Faltas de Marina:1')">1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" onclick="mostrarMensagem('Média geral das notas')">Média</td>
+          <td onclick="mostrarMensagem('Média das notas: 71,8')">71,8</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function mostrarMensagem(mensagem) {
+      alert(mensagem);
+    }
+  </script>
+
+</body>
+
+</html>
