@@ -1,0 +1,129 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MaterialApp(home: Home()));
+
+class Home extends StatefulWidget {
+  @override
+  HomeState createState() {
+    return HomeState();
+  }
+}
+
+class HomeState extends State<Home> {
+  TextEditingController larguraController = TextEditingController();
+  TextEditingController alturaController = TextEditingController();
+  TextEditingController comprimentoController = TextEditingController();
+  String resp = "";
+
+  volume() {
+    double largura = double.parse(larguraController.text);
+    double altura = double.parse(alturaController.text);
+    double comprimento = double.parse(comprimentoController.text);
+    double volume = largura * altura * comprimento;
+    setState(() {
+      resp = 'Volume = $volume';
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Cálculo de Volume:',
+          style: TextStyle(color: Colors.purple), // Cor do título em roxo
+        ),
+        backgroundColor: Colors.white, // Cor de fundo da AppBar
+        iconTheme: const IconThemeData(color: Colors.purple), // Ícones em roxo
+      ),
+      body: Column(
+        children: [
+          Container(
+            margin: const EdgeInsets.all(10),
+            child: TextField(
+              controller: larguraController,
+              decoration: InputDecoration(
+                suffixIcon: IconButton(
+                  onPressed: () => larguraController.clear(),
+                  icon: const Icon(Icons.clear),
+                  color: Colors.purple, // Ícone de limpar em roxo
+                ),
+                border: OutlineInputBorder(
+                  borderSide: const BorderSide(color: Colors.purple),
+                ),
+                labelText: 'Largura',
+                labelStyle: const TextStyle(color: Colors.purple),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: const BorderSide(color: Colors.purple),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.all(10),
+            child: TextField(
+              controller: alturaController,
+              decoration: InputDecoration(
+                suffixIcon: IconButton(
+                  onPressed: () => alturaController.clear(),
+                  icon: const Icon(Icons.clear),
+                  color: Colors.purple, // Ícone de limpar em roxo
+                ),
+                border: OutlineInputBorder(
+                  borderSide: const BorderSide(color: Colors.purple),
+                ),
+                labelText: 'Altura',
+                labelStyle: const TextStyle(color: Colors.purple),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: const BorderSide(color: Colors.purple),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.all(10),
+            child: TextField(
+              controller: comprimentoController,
+              decoration: InputDecoration(
+                suffixIcon: IconButton(
+                  onPressed: () => comprimentoController.clear(),
+                  icon: const Icon(Icons.clear),
+                  color: Colors.purple, // Ícone de limpar em roxo
+                ),
+                border: OutlineInputBorder(
+                  borderSide: const BorderSide(color: Colors.purple),
+                ),
+                labelText: 'Comprimento',
+                labelStyle: const TextStyle(color: Colors.purple),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: const BorderSide(color: Colors.purple),
+                ),
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: volume,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.purple, // Cor de fundo do botão em roxo
+            ),
+            child: const Text(
+              '=',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white, // Texto do botão em branco para contraste
+              ),
+            ),
+          ),
+          Text(
+            resp,
+            style: const TextStyle(
+              fontSize: 20,
+              color: Colors.purple, // Resultado em roxo
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
